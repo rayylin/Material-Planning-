@@ -46,5 +46,6 @@ Another example:
 ![image](https://user-images.githubusercontent.com/58899897/194229462-3922cff4-dd14-411e-8757-eba5cb77f4be.png)
 
 ![image](https://user-images.githubusercontent.com/58899897/194229881-e5bffa55-3526-4227-86de-3cf5c8fda4a9.png)
+
 For this case, we could order materials for process C 4 days later without violoation of deadline.
 
