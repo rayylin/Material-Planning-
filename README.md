@@ -39,3 +39,10 @@ If there is a lead time for ordering raw material, we just need to add lead with
 ![image](https://user-images.githubusercontent.com/58899897/194224785-f3b11c84-cbd2-449a-876e-7b19447c2b00.png)
 For example, we could order the material of C and I later without the violation of deadline
 
+
+Another example:
+![image](https://user-images.githubusercontent.com/58899897/194229462-3922cff4-dd14-411e-8757-eba5cb77f4be.png)
+
+![image](https://user-images.githubusercontent.com/58899897/194229881-e5bffa55-3526-4227-86de-3cf5c8fda4a9.png)
+For this case, we could order materials for process C 4 days later without violoation of deadline.
+
