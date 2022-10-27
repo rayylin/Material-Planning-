@@ -3,6 +3,8 @@
 Case Situation: We cooperate with an animal food manufacturer, and they have limited storage space and are trying to maintain minimal inventory on hand.
 So our task is to build a model for them to calculate when should they issue purchase orders.
 
+To achieve this goal, I use python to employ the Critical Path Method Algorithm to calculate the slack. The slack is how long we could delay without violating the deadline. We could order the raw materials for processes with slack later but would not delay the production schedule.
+
 #Process data
 "Process": Process name
 "Prerequisite": processes needed to be done before starting this process
