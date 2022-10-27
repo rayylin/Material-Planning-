@@ -1,11 +1,11 @@
 # Production-Planning
 
-Case Situation: We cooperate with a animal food manufacturer, and they have limited storage space and is trying to maintain minimun inventort on-hand.
+Case Situation: We cooperate with an animal food manufacturer, and they have limited storage space and are trying to maintain minimal inventory on hand.
 So our task is to build a model for them to calculate when should they issue purchase orders.
 
 #Process data
 "Process": Process name
-"Prerequisite": processed needed to be done before starting this process
+"Prerequisite": processes needed to be done before starting this process
 "Duration": How many days this task takes
 
 For example
@@ -16,7 +16,7 @@ Let's use python to create a directed graph to have a quick understanding of the
 
 ![image](https://user-images.githubusercontent.com/58899897/194221788-78aeb6df-721d-4ead-b0d2-ea0e97e8dd4e.png)
 
-If the process flows are complicated, the graph may be difficult to understand. To solve this issue, we could use different layout methods or try to manually edit pos.
+If the process flows are complicated, the graph may be difficult to understand. To solve this issue, we could use different layout methods or try to manually edit the pos.
 
 # Algorithms
 We use BFS & Critical Path algorithms to solve this issue
@@ -25,20 +25,20 @@ We use BFS & Critical Path algorithms to solve this issue
 
 #Result
 How should we determine when and what amount of material should we order?
-We could use the amount required minuses the total amount of inventory on-hand 
+We could use the amount required minus the total amount of inventory on-hand 
 *we should order: required amount-(on-hand + in-transit)
-We could use Slack to determin when should we order. If there is a positive slack, we could order later, thereby avoiding the shortage of storage space.
+We could use Slack to determine when should we order. If there is a positive slack, we could order later, thereby avoiding the shortage of storage space.
 If there is a lead time for ordering raw material, we just need to add lead with the Duration.
 
 "ES": Earliest Start
 "EF": Earliest Finish
 "LF": Latest Finish
 "LS": Latest Start
-"SK": Slack, how much time you could delay without violation of deadline.
+"SK": Slack, how much time you could delay without violating the deadline.
 
 ![image](https://user-images.githubusercontent.com/58899897/194224785-f3b11c84-cbd2-449a-876e-7b19447c2b00.png)
 
-For example, we could order the material of C and I later without the violation of deadline
+For example, we could order the material for C and I later without violating the deadline
 
 
 Another example:
@@ -47,5 +47,5 @@ Another example:
 
 ![image](https://user-images.githubusercontent.com/58899897/194229881-e5bffa55-3526-4227-86de-3cf5c8fda4a9.png)
 
-For this case, we could order materials for process C 4 days later without violoation of deadline.
+For this case, we could order materials for process C 4 days later without violoating the deadline.
 
